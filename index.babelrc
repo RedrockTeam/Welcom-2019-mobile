@@ -1,0 +1,40 @@
+/* {
+    "presets": [
+        "@babel/preset-env"
+    ],
+    "plugins": [
+        [
+            "@babel/plugin-transform-runtime",
+            {
+                "corejs": "2",
+                "helpers": true,
+                "regenerator": true,
+                "useESModules": true
+            }
+        ]
+    ]
+}
+ */
+{
+    "presets": [
+      ["es2015", { "modules": false }]
+    ],
+    "plugins": [
+      ["component", [
+            {
+               "libraryName": "mint-ui",
+               "style": true
+            }
+          ]
+      ],
+      [
+        "@babel/plugin-transform-runtime",
+        {
+          "corejs": "2",
+          "helpers": true,
+          "regenerator": true,
+          "useESModules": true
+        }
+      ]
+    ]
+}
