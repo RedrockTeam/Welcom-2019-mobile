@@ -1,0 +1,41 @@
+$theme: #003ee0;
+$qian: #c5e0ff;
+
+.jianju {
+  // padding-top: 40px;//没起作用，所以放到suhse和shitang的vue中了,加高宽也没用
+  // width: 690px;
+  // height: 900px;
+
+  .sushimain {
+    width: 640px;
+    height: 790px;
+    border: $theme solid 3px;
+    margin: 16px auto 48px auto;
+    background-color: $qian;
+
+
+    color: $theme;
+    // .swiper-container {
+    //   margin: 30px auto 42px auto;
+    //   img {
+    //     width: 474px;
+    //     height: 253px;
+    //   }
+    // }
+
+    .tit {
+      font-size: 28px;
+      font-weight: bold;
+      margin-left: 30px;
+      font-family: "pingfang-bold";
+    }
+
+    .con {
+      font-size: 24px;
+      margin: 20px 30px auto 30px;
+      line-height: 40px;
+      font-family: "pingfang-regular";
+    }
+
+  }
+}
