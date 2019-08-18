@@ -1,0 +1,107 @@
+
+*,
+*::before,
+*::after{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing:border-box;
+	/* tap-highlight-color:transparent; */
+	-webkit-tap-highlight-color:transparent;
+}
+
+@font-face {
+    font-family: "yinX" ;
+    font-weight: normal;
+    font-style: normal;
+    src:url( './fonts/MFLiHei.ttf') format('truetype');
+}
+
+body{
+	font-family: "yinX";
+	padding: 0 0;
+	margin: 0 0;
+}
+
+a{
+	text-decoration: none;
+	text-align: center;
+	cursor: pointer;
+	color: black;
+}
+
+ul,ol{
+	list-style:none;
+}
+
+.clearFix::before,
+.clearFix::after{
+	content: "";
+	display: block;
+	visibility: hidden;
+	height: 0;
+	line-height: 0;
+	clear: both;
+}
+
+
+
+
+ .my-gallery{
+    width:100%;
+}
+.my-gallery  figure {
+    width: 100%;
+}
+
+.my-gallery  figure img{
+    width:100%;
+    max-height:400px;
+ }
+ .vjs-custom-skin > .video-js .vjs-big-play-button {
+	 width: 2em;
+	 height: 1em;
+	 left: 56% !important;
+ }
+
+
+.mint-header{
+	height: 78px;
+}
+
+.my-gallery figure img {
+	width: 100%;
+	max-height: 365px;
+}
+@keyframes bounce-in {
+	0% {
+	  transform: scale(1);
+	}
+	20% {
+	  transform: scale(0.5);
+	}
+	100% {
+	  transform: scale(1);
+	}
+  }
+
+/* 解决页面出现 X轴横向滚动条问题——开始 */
+html {
+  overflow-y: scroll;
+}
+
+:root {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+:root body {
+  position: absolute;
+}
+
+body {
+  width: 100vw;
+  overflow: hidden;
+}
+
+/* 解决页面出现 X轴横向滚动条问题——结束 */
