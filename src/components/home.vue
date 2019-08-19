@@ -130,7 +130,7 @@ export default {
         ],
         welcomeOne:{
             'title' : '学长学姐帮帮忙',
-            'detail' : '"重邮小百科"——学长学姐，带你探索邮苑奇趣！',
+            'detail' : '探索邮苑奇趣，与学长学姐零距离接触，号称重邮小百科的他们，为你解答疑惑。',
              'time' : '活动时间:8.15--9.01',
              'src':require('../assets/img/hongDongA.jpg')
         },
@@ -153,9 +153,9 @@ export default {
             }
         },
         routeChange:function(){
-            console.log(this.isWeiXin())
+            // console.log(this.isWeiXin())
             if(this.isWeiXin()){
-                window.location.href="http://www.baidu.com"
+                window.location.href="https://wx.idsbllp.cn/game/xzxjbbm2019/#/"
             }else{
                 this.$router.push({name:'help'})
             }
@@ -172,7 +172,7 @@ export default {
     mounted:function(){
         document.documentElement.scrollTop = document.body.scrollTop = 0
         document.getElementsByClassName('web')[0].addEventListener('click',function(){
-            window.location.href="http://honhyan.cquptx.cn/web/"
+            window.location.href="https://hongyan.cqupt.edu.cn/web/"
         })
 
     }
@@ -211,7 +211,7 @@ export default {
     line-height: 90px;
     font-size: 34px;
     position: relative;
-    left: 200px;
+    left: 204px;
     color:#cbfffa;
 }
 .home_map .home_map_text {

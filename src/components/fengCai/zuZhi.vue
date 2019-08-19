@@ -165,29 +165,34 @@ export default {
 .zu_btn_notactive{
     background-color: #174bdd;
     color:#a7ddf9;
-    border-bottom: 1px solid #fff; 
 }
 .zu_btn_active{
     background-color: #43b3ff;
     color:#fff;
-    border-bottom: 2px solid #154fef;    
+    box-sizing: content-box;
+    border-bottom: 2px solid #154fef; 
+    /* border-top:5px solid #43b3ff; */
+    /* height: 101%;    */
 }
 .zu_btn_con{
     width: 100%;
-    height:auto;
+    height:100%;
     margin-top: 30px;
 }
 .zu_btn_con ul{
-    width: 100%;
-    height: 100%;
+   /* width: 100%; */
+   width: 630px;
+    height: 50px;
     display: flex;
+    justify-content: space-between;
+    background-color: #174bdd;
 }
 .zu_btn_con ul li{
-    width: 33.3%;
+    width: 210px;
     height: 100%;
     text-align: center;
     line-height: 50px;
-    border-right: 2px solid #174bdd;
+    border:1px solid #174bdd;
 }
 .zu_btn_con ul li span{
     display: block;

@@ -40,7 +40,7 @@ export default {
       )
       .then(response => {
         this.ansmsg = response.data;
-        console.log(response);
+        // console.log(response);
         const realphotourls = [];
         this.ansmsg.photoUrls.forEach(photo => {
           const realphoto =

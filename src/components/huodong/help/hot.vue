@@ -12,7 +12,7 @@ export default {
     this.$axios.get('https://wx.idsbllp.cn/234/seniorhelpme/question?pageNo=1')
     .then(
       response=>{
-        console.log(response);
+        // console.log(response);
         this.hotqlist = response.data;
       }
     )

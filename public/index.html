@@ -7,6 +7,12 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link rel="icon" href="<%= BASE_URL %>favicon.ico">
   <title>welcome</title>
+  <script>
+    if (!(/( (iPhone) | (Android) )/.test(navigator.userAgent))) {
+      window.location.href = "https://wx.idsbllp.cn/game/welcome2018/#/style"
+    }
+
+  </script>
 </head>
 
 <body>
@@ -23,10 +29,10 @@
   WXSHARE.config({ debug: false });
   WXSHARE.ready(function () {
     var option = {
-      title: "学长学姐帮帮忙",
-      link: "http://wx.idsbllp.cn/game/xzxjbbm2019/",
-      imgUrl: 'http://wx.idsbllp.cn/game/xzxjbbm2019/favicon.ico',
-      desc: '学长学姐帮帮忙',
+      title: "2019重邮迎新网",
+      link: "https://wx.idsbllp.cn/game/welcome2019/mobile/",
+      imgUrl: '',
+      desc: '2019重邮迎新网',
       type: '',
       success: function () {
         console.log('分享成功');

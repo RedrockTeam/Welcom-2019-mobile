@@ -205,7 +205,7 @@ export default {
 .home_countDown .num .num_text{
     width: 105px;
     height: 40px;
-    left:135px;
+    left:137px;
     font-size: 12px;
     top: -10px;
 }

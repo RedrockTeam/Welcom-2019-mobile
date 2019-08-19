@@ -36,12 +36,12 @@ export default {
     pushToHelp: function() {
       this.$refs.helpmore.classList.add("moreactive");
       // if(微信打开) 跳转活动
-      console.log(this.isWeiXin());
-      // if (this.isWeiXin()) {
-      //   window.location.href = "https://wx.idsbllp.cn/game/xzxjbbm2019/#/";
-      // } else {
+      // console.log(this.isWeiXin());
+      if (this.isWeiXin()) {
+        window.location.href = "https://wx.idsbllp.cn/game/xzxjbbm2019/#/";
+      } else {
         this.$router.push({ path: "/huodong/help" });
-      // }
+      }
     },
     pushToHua: function() {
       this.$refs.helpmore.classList.add("moreactive");

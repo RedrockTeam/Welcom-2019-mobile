@@ -104,7 +104,7 @@ export default {
 .junX_video .video_con .videoA .videoA_name {
     width: 100%;
     height: 40px;
-    font-size: 31px;
+    font-size: 26px;
     font-family: 'not specified';
     color: #3e66e6;
     text-align: center;
@@ -112,7 +112,7 @@ export default {
 .junX_video .video_con .videoC .videoA_name{
      width: 100%;
     height: 40px;
-    font-size: 31px;
+    font-size: 26px;
     font-family: 'not specified';
     color: #3e66e6;
     text-align: center;   
@@ -121,7 +121,7 @@ export default {
     font-family: 'not specified';
     color: #3e66e6;
     text-align: center;
-    font-size: 12px;
+    font-size: 24px;
     width: 100%;
     height: 40px;
 }
