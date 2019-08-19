@@ -59,7 +59,7 @@ export default {
     },
     methods:{
         countDown:function(){
-            let after = '2019/09/01 00:00:00'
+            let after = '2019/09/05 00:00:00'
             let mydate = new Date()
             let now = mydate.getTime()
             let subtract = new Date(Date.parse(after)).getTime() - now  //时间差距

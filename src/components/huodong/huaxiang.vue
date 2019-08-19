@@ -14,7 +14,7 @@
     </main-card>
     <div class="tip">
       <div class="tipimg">
-        <img src="../../assets/images/huodong/help/tip.png" />
+        <vue-preview :slides="bangshou"></vue-preview>
       </div>
 
       <p class="qingguanzhu">关注【重邮小帮手】公众号，即可参与活动</p>
@@ -29,7 +29,8 @@ export default {
       items: [
         {
           title: "活动主题:",
-          content: "简单选择形成叙述自我，绘出完整邮子画像，由你碰撞发现更多精彩。"
+          content:
+            "简单选择形成叙述自我，绘出完整邮子画像，由你碰撞发现更多精彩。"
         },
         {
           title: "参与对象:",
@@ -39,7 +40,13 @@ export default {
           title: "活动时间:",
           content: "2019/8/20-2019/9/10"
         }
-      ]
+      ],
+      bangshou: [{
+        src: require("../../assets/images/huodong/bangshou.png"),
+        msrc: require("../../assets/images/huodong/bangshou.png"),
+        w: 300, //双击时放大的尺寸
+        h: 300
+      }]
     };
   },
   mounted: function() {
@@ -90,10 +97,18 @@ export default {
     width: 285px;
     height: 341px;
     margin: 60px auto 16px auto;
-    img {
-      width: 285px;
-      height: 341px;
-    }
+    background-image: url("../../assets/images/huodong/tip.png");
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 100% auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 47px 21px 49px 21px;
+    // img {
+    //   width: 242px;
+    //   height: 242px;
+    // }
   }
   .qingguanzhu {
     font-size: 18px;

@@ -98,7 +98,7 @@ export default {
     content: '\e639';
     font-family: 'zuoB';
     height: 30px;
-    line-height: 40px;
+    line-height: 30px;
     color:#4470db;
     font-size: 14px;
 }

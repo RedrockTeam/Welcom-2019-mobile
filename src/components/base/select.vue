@@ -1,18 +1,18 @@
 <template>
    <div class="school_select_con" ref="checkBox">
-        <div class="school_select clearFix" @click="showChange">
+        <div class="school_select">
              <div class="top_name"> {{school[isclick].name}}</div>
-             <span></span>
+             <span @click="showChange" class="secShow"></span>
         </div>
         <div class="school_list" v-show="show"> 
-            <span v-for=" (option , index) in school" :key="option.index" :value = index :class="isclick === index ? 'click':'notclick'" @click="change(index)">{{option.name}}</span>
+            <span v-for=" (option , index) in school" :value = index :class="isclick === index ? 'click':'notclick'" @click="change(index)">{{option.name}}</span>
         </div>
-    </div>
+   </div>
 </template>
 <script>
 import merge from 'webpack-merge'
+import { futimes } from 'fs';
 export default {
-    props:['school'],
      data(){
          return{
            click:0,
@@ -26,10 +26,23 @@ export default {
              this.$router.push({
                  query:merge(this.$route.query , {'id' : index })
              })  
-             this.show = false      
+             this.show = false  
         },
         showChange:function(){
             this.show = true
+            let _that = this
+/*         document.addEventListener('click' , function(e){
+            if(_that.$refs.checkBox.contains(e.target)){
+                    console.log(2)
+            }else{
+                 _that.show = false
+            }
+        }) */
+        document.addEventListener('click' , function(e){
+               if(e.target.className != 'secShow'){
+                      _that.show = false
+               }
+        })
         },
 
      },
@@ -38,16 +51,10 @@ export default {
              return this.click
          }
     },
-    
+    props:['school'],
     mounted:function(){
-       let _that = this
-       document.addEventListener('click' , function(e){
-           if(_that.$refs.checkBox.contains(e.target)){
-               return ;
-           }else{
-               _that.show = false
-           }
-       })
+    },
+    beforeDestroy:function(){ 
     }
 }
 </script>
@@ -69,10 +76,10 @@ export default {
     font-weight: 400;
     text-align: center;
     background-color: #b7e8ff;
-    border:2px solid #225bec;
+    border:1px solid #225bec;
 }
 .school_select .top_name{
-    width: 260px;
+    width: 250px;
     height: 100%;
     line-height: 45px;
     overflow: hidden;
@@ -82,10 +89,9 @@ export default {
     width: 50px;
     height: 100%;
     line-height: 40px;
-    float:right;
     text-align: center;
     background-color: #1d88eb;
-    
+    border: 1px solid #1d88eb;
 }
 .school_select span::after{
     display: inline-block;
@@ -97,9 +103,10 @@ export default {
     border-top: 14px solid #b7e8ff;
 }
 .school_list{
-    width: 300px;
+    width: 298px;
     font-family: "not specified";
     background-color: #b7e8ff;
+    border:1px solid #225bec;
 }
 .school_list span{
     display: block;
@@ -107,6 +114,7 @@ export default {
     text-align: center;
     min-height: 60px;
     line-height: 60px;
+    /* border:1px solid #225bec; */
 }
 .notclick{
     color: #225bec;

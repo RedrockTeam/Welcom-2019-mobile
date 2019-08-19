@@ -7,7 +7,7 @@
             <li><div :class="/huodong/.test(exec) ? 'home_active' : 'home_notactive'"> <span> <router-link :to="{name:'huodong'}">活动</router-link> </span> </div></li>
             <li> <div :class=" /(jiemi)/.test(exec) ? 'home_active' : 'home_notactive'"><span> <router-link :to="{path:'/jiemi' , query:{id:0}}">揭秘</router-link> </span></div></li>
             <li><div :class="/(fengcai)/.test(exec) ? 'home_active' : 'home_notactive'"> <span> <router-link :to="{name:'zuZhi' , query:{id:0}}">风采</router-link> </span></div> </li>
-            <li><div :class="'/we' === this.$route.path ? 'active' : 'notactive'"> <span> <a href="http://www.baidu.com">我们</a> </span></div> </li>
+            <li><div :class="'/we' === this.$route.path ? 'active' : 'notactive'"> <span> <a href="http://hongyan.cqupt.edu.cn/aboutus/mobile.html">我们</a> </span></div> </li>
         </ul>
     </div>
 </template>
@@ -31,16 +31,16 @@ export default {
         handMove:function($event){
             this.wDistanceX =  $event.touches[0].clientX -this.wStartX 
             this.wTranslateX += this.wDistanceX
-            if(this.wTranslateX >=-70 && this.wTranslateX <=0 && this.wDistanceX){
+            if(this.wTranslateX >=-90 && this.wTranslateX <=0 && this.wDistanceX){
                 this.$refs.roll.style.transform = 'translateX('+this.wTranslateX+'px)'
             }else if(this.wTranslateX > 0){
                 this.wTranslateX = 0
             }else{
-                this.wTranslateX = -70
+                this.wTranslateX = -90
             }
         },
         handEnd:function(){
-            if(this.wTranslateX >=-70 && this.wTranslateX <=0 && this.wDistanceX)  {
+            if(this.wTranslateX >=-90 && this.wTranslateX <=0 && this.wDistanceX)  {
                   this.$refs.roll.style.transform = 'translateX('+this.wTranslateX+'px)'
             }
         }
@@ -62,13 +62,14 @@ export default {
     overflow: hidden;
 }
 .head_btn ul{
-    width:120%;
+    width:130%;
     height: 100%;
     background-color: #9cb8ff;
 }
 .head_btn ul li{
     float: left;
-    width:14%;
+    width:126px;
+    margin-right: 13px;
     height: 100%;
 }
 .head_btn ul li div{

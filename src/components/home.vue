@@ -36,10 +36,10 @@
              <div class="home_bubble">
                  <homeBubble-vue></homeBubble-vue>
              </div>
-            <router-link :to="{name: 'help',query:{'top':'1'}}" class="home_welcome_one"  @click.native="routeChange()">
+            <router-link to="/" class="home_welcome_one" @click.native="routeChange()">
                 <homeWelcome-vue :welcome="welcomeOne"></homeWelcome-vue>
             </router-link>
-            <router-link :to="{name: 'hua',query:{'top':'1'}}" class="home_welcome_two">
+            <router-link :to="{name:'hua',query: {'top':1}}" class="home_welcome_two">
                 <homeWelcome-vue :welcome="welcomeTwo"></homeWelcome-vue>
             </router-link>
         </div>
@@ -51,7 +51,31 @@
              <a href="http://hongyan.cqupt.edu.cn/aboutus/mobile.html" class="home_we_pic"></a>
              <a href="http://hongyan.cqupt.edu.cn/aboutus/mobile.html" class="home_we_link">了解更多</a>
         </div>
-        <div class="home_ma"></div>
+        <div class="home_ma">
+            <div class="home_ma_con">
+                <div class="imgA">
+                    <div>
+                        <vue-preview :slides="maA" class="maA"></vue-preview>
+                    </div>
+                </div>
+                <div class="imgB">
+                    <div>
+                        <vue-preview :slides="maB" class="maB"></vue-preview>
+                    </div>
+                </div>
+            
+           </div>
+            <div class="home_ma_text">
+                <div class="home_textA">
+                     <div class="home_textA_A">手机扫一扫 </div>
+                     <div class="home_textA_B">下载掌邮APP</div>
+                </div>
+                <div class="home_textB">
+                     <div class="home_textB_A">微信扫一扫 </div>
+                     <div class="home_textB_B">关注重邮小帮手</div>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -84,6 +108,26 @@ export default {
             h: 1000
           },
         ],
+        maA:[
+          {
+            src: require('../assets/img/erWeiMaA.png'),//预览时的大图
+            msrc: require('../assets/img/erWeiMaA.png'),//默认的小图
+            alt: 'picture1',
+            title: 'Image Caption 1',
+            w: 300,//双击时放大的尺寸
+            h: 300
+          },
+        ],
+        maB:[
+          {
+            src: require('../assets/img/erWeiMaB.png'),//预览时的大图
+            msrc: require('../assets/img/erWeiMaB.png'),//默认的小图
+            alt: 'picture1',
+            title: 'Image Caption 1',
+            w: 300,//双击时放大的尺寸
+            h: 300
+          },
+        ],
         welcomeOne:{
             'title' : '学长学姐帮帮忙',
             'detail' : '"重邮小百科"——学长学姐，带你探索邮苑奇趣！',
@@ -111,7 +155,7 @@ export default {
         routeChange:function(){
             console.log(this.isWeiXin())
             if(this.isWeiXin()){
-                window.location.href="https://wx.idsbllp.cn/game/xzxjbbm2019/#/"
+                window.location.href="http://www.baidu.com"
             }else{
                 this.$router.push({name:'help'})
             }
@@ -128,7 +172,7 @@ export default {
     mounted:function(){
         document.documentElement.scrollTop = document.body.scrollTop = 0
         document.getElementsByClassName('web')[0].addEventListener('click',function(){
-            window.location.href="http://hongyan.cqupt.edu.cn.cqu.pt/web/"
+            window.location.href="http://honhyan.cquptx.cn/web/"
         })
 
     }
@@ -149,7 +193,7 @@ export default {
 .home_con{
     height: 3350px;
     width: 100%;
-    background: url('../assets/img/homeBack.jpg');
+    background: url('../assets/img/homeNew.jpg');
     background-position: center -670px;;
     background-repeat: no-repeat;
     background-size: cover;
@@ -299,5 +343,73 @@ export default {
 .home_ma{
     width: 100%;
     height: 440px;
+}
+.home_ma_con{
+    display: flex;
+    width: 100%;
+    height: 260px;
+    position: relative;
+    top: 58px;
+}
+.home_ma_con .imgA{
+    position: relative;
+    left: 55px;
+    width:286px;
+    height: 260px;
+}
+.home_ma_con .imgA div , .home_ma_con .imgB div{
+    width: 270px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #88abff;
+}
+.home_ma_con .imgA div .maA{
+    width: 100%;
+    height: 100%;
+}
+.home_ma_con .imgA div .maA , .home_ma_con .imgB div .maB{
+    width: 250px;
+    height: 230px;
+}
+.home_ma_con .imgB{
+    position: relative;
+    left: 125px;
+    width:286px;
+    height: 260px;
+}
+.home_ma_text{
+    display: flex;
+    position: relative;
+    top: 100px;
+    width: 100%;
+    height: auto;
+}
+.home_ma_text .home_textA{
+    position: relative;
+    left: 100px;
+    width: 180px;
+    height: auto;
+    word-wrap: wrap;
+    font-size: 26px;
+    color: #003ee0;
+}
+.home_ma_text .home_textA  .home_textA_A , .home_ma_text .home_textB  .home_textB_A{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+}
+.home_ma_text .home_textA  .home_textA_B , .home_ma_text .home_textB .home_textB_B{
+    width: 100%;
+    height: 30px;
+    text-align: center;   
+}
+.home_ma_text .home_textB{
+    position: relative;
+    left: 270px;
+    width: 200px;
+    height: 100%;
+    font-size: 26px;
+    color: #003ee0;
+    word-wrap: wrap;
 }
 </style>

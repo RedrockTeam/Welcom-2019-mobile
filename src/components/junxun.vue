@@ -43,14 +43,6 @@ export default {
               this.$refs.Junbtn.style.transform = 'translateX('+instandce+'vw)'
           }
       },
-      computed:{
-          a:function(){
-              return this.$route.query['index']
-          }
-      },
-      created:function(){
-          this.a = this.$route.query['index']
-      },
       mounted:function(){
           if(this.$route.query['top'] == 1){
              document.documentElement.scrollTop = document.body.scrollTop = 300
