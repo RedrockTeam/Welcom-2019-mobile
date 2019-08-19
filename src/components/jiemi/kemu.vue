@@ -201,7 +201,7 @@ export default {
   },
   computed: {
     index: function() {
-      console.log(this.$route.query["id"]);
+      // console.log(this.$route.query["id"]);
       this.draw(this.$route.query["id"]);
       return this.$route.query["id"];
     }

@@ -53,7 +53,7 @@ export default {
          this.$refs.box.style.transform="translateX(-"+(63.467*a)+"vw)";
       this.$refs.box.style.transition="all 1s";
       this.nowIndex = a; 
-      console.log(this.nowIndex)
+      // console.log(this.nowIndex)
     },
     // 此处一般b为nextIndex
     gotonext(b){
@@ -62,7 +62,7 @@ export default {
       this.$refs.box.style.transition="all 1s";
 
       this.nowIndex = b;
-       console.log(this.nowIndex)
+      //  console.log(this.nowIndex)
     }
     },
 };
