@@ -1,11 +1,11 @@
 <template>
    <div class="school_select_con" ref="checkBox">
         <div class="school_select">
-             <div class="top_name"> {{school[isclick].name}}</div>
+             <div class="top_name"> {{school[nei].name}}</div>
              <span @click="showChange" class="secShow"></span>
         </div>
         <div class="school_list" v-show="show"> 
-            <span v-for=" (option , index) in school" :value = index :class="isclick === index ? 'click':'notclick'" @click="change(index)">{{option.name}}</span>
+            <span v-for=" (option , index) in school" :value = index :class="nei === index ? 'click':'notclick'" @click="change(index)">{{option.name}}</span>
         </div>
    </div>
 </template>
@@ -49,6 +49,9 @@ export default {
      computed:{
          isclick:function(){
              return this.click
+         },
+         nei:function(){
+             return this.$route.query['id']
          }
     },
     props:['school'],
