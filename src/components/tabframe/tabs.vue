@@ -45,9 +45,9 @@ export default {
   methods: {
     handleTabClick(tab, index) {
       this.$emit("input", tab.name);
-      this.$router.push({
-        query: merge(this.$route.query, { id: 0 })
-      });
+      // this.$router.push({
+      //   query: merge(this.$route.query, { id: 0 })
+      // });
     }
   }
 };

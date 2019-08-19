@@ -9,14 +9,14 @@
           :key="item.index"
           class="list_item"
           bag="li"
-          :class="{changan:isActive}"
+          :class="{longpress:isActive}"
           ref="changan"
           @ontouchstart="gtouchstart()"
           @ontouchmove="gtouchmove()"
           @ontouchend="gtouchend()"
         >{{item.message}}</router-link>
 
-        <a href="http://hongyan.cqupt.edu.cn.cqu.pt/web/" class="list_item">网址大全</a>
+        <a href="https://hongyan.cqupt.edu.cn/web/" class="list_item">网址大全</a>
       </ul>
     </main-card>
   </div>
@@ -66,6 +66,7 @@ export default {
       //执行长按要执行的内容，如弹出菜单
       // alert("长按事件触发发");
       this.isActive = true;
+      console.log('长按了')
     }
     
   },
@@ -122,7 +123,7 @@ export default {
       background-size: contain;
       color: #ffffff;
     }
-    .changan{
+    .longpress{
       background-image: url("../assets/images/gonglue/active.png");
       background-repeat: no-repeat;
       background-position: 0% 0%;

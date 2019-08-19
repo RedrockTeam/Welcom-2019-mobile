@@ -1,17 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title>welcome</title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but redrock-welcome doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <title>welcome</title>
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but redrock-welcome doesn't work properly without JavaScript enabled. Please enable it to
+      continue.</strong>
+  </noscript>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+</body>
+<script src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+<script src="https://wx.idsbllp.cn/wx-api/share.js"></script>
+<script>
+  WXSHARE.config({ debug: false });
+  WXSHARE.ready(function () {
+    var option = {
+      title: "学长学姐帮帮忙",
+      link: "http://wx.idsbllp.cn/game/xzxjbbm2019/",
+      imgUrl: 'http://wx.idsbllp.cn/game/xzxjbbm2019/favicon.ico',
+      desc: '学长学姐帮帮忙',
+      type: '',
+      success: function () {
+        console.log('分享成功');
+      },
+      cancel: function () {
+        console.log('取消分享');
+      },
+    };
+    wx.onMenuShareTimeline(option);
+    wx.onMenuShareAppMessage(option);
+    wx.onMenuShareQQ(option);
+    wx.onMenuShareWeibo(option);
+    wx.onMenuShareQZone(option);
+  });
+</script>
+
 </html>

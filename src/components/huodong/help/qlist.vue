@@ -17,7 +17,7 @@
 
     <div class="tip">
       <div class="tipimg">
-        <img src="../../../assets/images/huodong/help/tip.png" />
+        <vue-preview :slides="bangshou"></vue-preview>
       </div>
 
       <p class="qingguanzhu">关注【重邮小帮手】公众号，即可参与活动</p>
@@ -35,7 +35,13 @@ import qNew from "@/components/huodong/help/new.vue";
 export default {
   data() {
     return {
-      activeName: "hot"
+      activeName: "hot",
+      bangshou: [{
+        src: require("../../../assets/images/huodong/bangshou.png"),
+        msrc: require("../../../assets/images/huodong/bangshou.png"),
+        w: 300, //双击时放大的尺寸
+        h: 300
+      }]
     };
   },
   components: {
@@ -65,10 +71,19 @@ export default {
     width: 285px;
     height: 341px;
     margin: 60px auto 16px auto;
-    img {
-      width: 285px;
-      height: 341px;
-    }
+    background-image: url("../../../assets/images/huodong/tip.png");
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 100% auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 47px 21px 49px 21px;
+    // img {
+    //   width: 285px;
+    //   height: 341px;
+    // }
   }
   .qingguanzhu {
     font-size: 18px;

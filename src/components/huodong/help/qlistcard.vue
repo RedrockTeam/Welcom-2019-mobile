@@ -37,7 +37,7 @@ export default {
   },
   methods: {
     changeroute(hotq){
-      this.$router.push({name:'xiangqing',params: { id: hotq.id}})
+      this.$router.push({name:'xiangqing',query: { id: hotq.id}})
     }
   }
 };
@@ -48,7 +48,7 @@ i {
 }
 .question-card {
   width: 616px;
-  height: 235px;
+  // height: 235px;
   background-color: #bed8ff;
   border: 2px solid #3181ef;
   position: relative;
@@ -92,7 +92,7 @@ i {
     color: #265de6;
     opacity: 0.8;
     line-height: 40px;
-    margin: 28px 0;
+    margin: 24px 0;
     
   }
   .ps {
@@ -102,7 +102,7 @@ i {
       opacity: 0.5;
       display: flex;
       justify-content: space-between;
-      line-height: 18px;
+      line-height: 20px;
     }
 }
 </style>

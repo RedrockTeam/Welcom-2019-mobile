@@ -193,7 +193,7 @@ export default {
   margin: 10px auto 48px auto;
 
   .select-f {
-    margin: 30px 30px 0 0;
+    margin: 28px 30px 0 0;
   }
 
   .chart-wrapper {

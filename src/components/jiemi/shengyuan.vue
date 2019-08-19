@@ -85,9 +85,9 @@ export default {
             itemStyle: {
               // borderColor: "#fff",
               // borderWidth: 1,
-              shadowColor: "#fff",
-              shadowBlur: 8,
-              opacity: 1,
+              // shadowColor: "#fff",
+              // shadowBlur: 8,
+              // opacity: 1,
 
               color(params) {
                 // build a color map as your need.

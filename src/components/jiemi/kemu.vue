@@ -182,9 +182,9 @@ export default {
               verticalAlign: "middle"
             },
             itemStyle: {
-                shadowColor: "#fff",
-                shadowBlur: 8,
-                opacity: 1,
+                // shadowColor: "#fff",
+                // shadowBlur: 8,
+                // opacity: 1,
                 color(params) {
                   // build a color map as your need.
                   const colorList = ["#ff9dba", "#7095ff", "#7ef7ff"];
@@ -228,7 +228,7 @@ export default {
   margin: 10px auto 48px auto;
 
   .select-f {
-    margin: 30px 30px 0 0;
+    margin: 28px 30px 0 0;
   }
   .chart-wrapper2 {
     width: 440px;

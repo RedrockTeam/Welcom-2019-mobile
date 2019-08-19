@@ -83,7 +83,7 @@ i {
     color: #265de6;
     opacity: 0.8;
     line-height: 40px;
-    margin: 28px 0;
+    margin: 24px 0;
   }
   .ps {
     font-size: 20px;
