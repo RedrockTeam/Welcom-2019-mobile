@@ -3,32 +3,32 @@
         <div class="video_con">
             <div class="video_head" v-if="index === 0">
                 <div class="border">
-                   <video :src="video[0].src" controls="controls" :poster="video[0].img"></video>
+                   <video :src="video[0].src" controls="controls" :poster="video[0].img" preload="load"></video>
                 </div>
             </div>
             <div class="videoB" v-else-if="index ===1">
                 <div class="videoB_border">
-                   <video :src="video[1].src"  :poster="video[1].img" controls="controls"></video>
+                   <video :src="video[1].src"  :poster="video[1].img" controls="controls" preload="load"></video>
                 </div>
             </div>
             <div class="videoC" v-else-if="index ===2">
                 <div class="videoC_border">
-                   <video :src="video[2].src"  :poster="video[2].img" controls="controls"></video>
+                   <video :src="video[2].src"  :poster="video[2].img" controls="controls" preload="load"></video>
                 </div>
             </div>
             <div class="videoD" v-else-if="index ===3">
                 <div class="videoD_border">
-                   <video :src="video[3].src"  :poster="video[3].img" controls="controls"></video>
+                   <video :src="video[3].src"  :poster="video[3].img" controls="controls" preload="load"></video>
                 </div>
             </div>
             <div class="videoE" v-else-if="index ===4">
                 <div class="videoE_border">
-                   <video :src="video[4].src"  :poster="video[4].img" controls="controls"></video>
+                   <video :src="video[4].src"  :poster="video[4].img" controls="controls" preload="load"></video>
                 </div>
             </div>
             <div class="videoF" v-else-if="index ===5">
                 <div class="videoF_border">
-                   <video :src="video[5].src"  :poster="video[5].img" controls="controls"></video>
+                   <video :src="video[5].src"  :poster="video[5].img" controls="controls" preload="load"></video>
                 </div>
             </div>
             <div class="video_compoent_con">
@@ -48,15 +48,15 @@ export default {
        data(){
            return{
                video:[
-                   {'src' : require('../videoRouse/xuanchuan/1.mp4'), 'img' : require('../../assets/img/xuanchuan/1.jpg')},
-                   {'src' : require('../videoRouse/xuanchuan/3.mp4') , 'img' : require('../../assets/img/xuanchuan/3.jpg')},
-                   {'src' :require('../videoRouse/xuanchuan/4.mp4')  , 'img' : require('../../assets/img/xuanchuan/4.jpg')},
-                   {'src' : require('../videoRouse/xuanchuan/5.mp4') , 'img' : require('../../assets/img/xuanchuan/5.jpg')},
-                   {'src' : require('../videoRouse/xuanchuan/6.mp4') , 'img' : require('../../assets/img/xuanchuan/6.jpg')},
-                   {'src' : require('../videoRouse/xuanchuan/7.mp4'),  'img' : require('../../assets/img/xuanchuan/7.jpg')},
+                   {'src' : 'http://video.nalgd.top/1.mp4', 'img' : require('../../assets/img/xuanchuan/1.jpg')},
+                   {'src' : 'http://video.nalgd.top/3.mp4' , 'img' : require('../../assets/img/xuanchuan/3.jpg')},
+                   {'src' :'http://video.nalgd.top/4.mp4'  , 'img' : require('../../assets/img/xuanchuan/4.jpg')},
+                   {'src' : 'http://video.nalgd.top/5.mp4' , 'img' : require('../../assets/img/xuanchuan/5.jpg')},
+                   {'src' :'http://video.nalgd.top/6.mp4' , 'img' : require('../../assets/img/xuanchuan/6.jpg')},
+                   {'src' : 'http://video.nalgd.top/7.mp4',  'img' : require('../../assets/img/xuanchuan/7.jpg')},
                ],
                src:require('../../assets/img/xuanchuan/1.jpg'),
-               change:require('../videoRouse/xuanchuan/1.mp4'),
+               change:'http://video.nalgd.top/1.mp4',
                index : 0
            }
        },
@@ -96,6 +96,7 @@ export default {
 .fengVideo_con .video_con .video_head video{
     width: 100%;
     object-fit:cover;
+    height: 100%;
 }
 .fengVideo_con .video_con .videoB{
     width: 100%;
@@ -129,6 +130,7 @@ export default {
 }
 .fengVideo_con .video_con .videoB .videoB_border video , .fengVideo_con .video_con .videoC .videoC_border video , .fengVideo_con .video_con .videoD .videoD_border video , .fengVideo_con .video_con .videoE .videoE_border video , .fengVideo_con .video_con .videoF .videoF_border video{ 
     width: 100%;
+    height: 100%;
     object-fit:cover; 
 }
 

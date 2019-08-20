@@ -101,7 +101,9 @@ export default {
         .fengCai_btn .btn_head{
         	display: flex;
         	width: 100%;
-        	height: 16px;
+            height: 16px;
+            position: relative;
+            top:-2px;
         }
         .fengCai_btn .btn_head .btn_head_high{
         	display: inline-block;

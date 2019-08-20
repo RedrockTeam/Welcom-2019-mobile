@@ -80,7 +80,7 @@ export default {
           name: "光电工程学院"
         },
         {
-          name: "学校"
+          name: "全校"
         }
       ],
       opt: {}

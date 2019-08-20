@@ -30,7 +30,7 @@ import kemu from '@/components/jiemi/kemu.vue'
 export default {
   data() {
     return {
-      activeName: "shengyuan"
+      activeName: "sex"
     };
   },
   components: {

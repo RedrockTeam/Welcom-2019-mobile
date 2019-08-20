@@ -31,7 +31,7 @@ Vue.use(Router)
 
 export default new Router({
   // 改为history模式
-  mode: 'history',
+  mode: 'hash',
   // 修改active的类名
   linkActiveClass: "active",
   routes: [

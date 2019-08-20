@@ -55,12 +55,12 @@
             <div class="home_ma_con">
                 <div class="imgA">
                     <div>
-                        <vue-preview :slides="maA" class="maA"></vue-preview>
+                        <vue-preview :slides="maB" class="maA"></vue-preview>
                     </div>
                 </div>
                 <div class="imgB">
                     <div>
-                        <vue-preview :slides="maB" class="maB"></vue-preview>
+                        <vue-preview :slides="maA" class="maB"></vue-preview>
                     </div>
                 </div>
             
