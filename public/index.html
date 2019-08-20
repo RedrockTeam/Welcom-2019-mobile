@@ -2,16 +2,24 @@
 <html lang="en">
 
 <head>
+
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-  <title>welcome</title>
+  <title>走，到重邮追梦去</title>
   <script>
     if (!(/( (iPhone) | (Android) )/.test(navigator.userAgent))) {
-      window.location.href = "https://wx.idsbllp.cn/game/welcome2018/#/style"
+      window.location.href = "https://wx.idsbllp.cn/game/welcome2019/pc/"
     }
-
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145852410-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-145852410-1');
   </script>
 </head>
 
@@ -29,10 +37,10 @@
   WXSHARE.config({ debug: false });
   WXSHARE.ready(function () {
     var option = {
-      title: "2019重邮迎新网",
+      title: "重邮迎新网",
       link: "https://wx.idsbllp.cn/game/welcome2019/mobile/",
-      imgUrl: '',
-      desc: '2019重邮迎新网',
+      imgUrl: 'https://wx1.sinaimg.cn/orj360/006xK8oRly1g659r7v2wbj30j20fwgp8.jpg',
+      desc: '重邮萌新的百宝箱，新生入学的一站式体验，快来和我们一起在此躁起来',
       type: '',
       success: function () {
         console.log('分享成功');

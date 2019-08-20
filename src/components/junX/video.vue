@@ -4,7 +4,7 @@
              <div class="videoA" v-if="index === 0">
                  <div class="videoA_con">
                      <div class="videoA_border">
-                        <video src="../videoRouse/junHui.mp4" controls="controls" :poster="Hui"></video>
+                        <video src="http://video.nalgd.top/junHui.mp4" controls="controls" :poster="Hui"></video>
                      </div>
                  </div>
                  <div class="videoA_name">军训视频</div>
@@ -12,7 +12,7 @@
              <div class="videoC"  v-if="index === 1">
                  <div class="videoA_con">
                      <div class="videoA_border">
-                        <video src="../videoRouse/pianDuan.mp4" controls="controls" :poster="Pian"></video>
+                        <video src="'http://video.nalgd.top/pianDuan.mp4'" controls="controls" :poster="Pian"></video>
                      </div>
                  </div>
                  <div class="videoA_name">军训片段</div>                 
@@ -104,7 +104,7 @@ export default {
 .junX_video .video_con .videoA .videoA_name {
     width: 100%;
     height: 40px;
-    font-size: 26px;
+    font-size: 31px;
     font-family: 'not specified';
     color: #3e66e6;
     text-align: center;
@@ -112,7 +112,7 @@ export default {
 .junX_video .video_con .videoC .videoA_name{
      width: 100%;
     height: 40px;
-    font-size: 26px;
+    font-size: 31px;
     font-family: 'not specified';
     color: #3e66e6;
     text-align: center;   
@@ -121,7 +121,7 @@ export default {
     font-family: 'not specified';
     color: #3e66e6;
     text-align: center;
-    font-size: 24px;
+    font-size: 12px;
     width: 100%;
     height: 40px;
 }

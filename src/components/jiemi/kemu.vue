@@ -68,9 +68,6 @@ export default {
         {
           name: "光电工程学院"
         },
-        {
-          name: "学校"
-        }
       ],
       opt: {}
     };

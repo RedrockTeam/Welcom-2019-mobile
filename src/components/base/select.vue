@@ -78,7 +78,7 @@ export default {
 .school_select .top_name {
   width: 250px;
   height: 100%;
-  line-height: 45px;
+  line-height: 50px;
   overflow: hidden;
 }
 .school_select span {

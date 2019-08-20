@@ -1,6 +1,6 @@
 <template>
   <div id="jiemiscroll">
-    <div class="chart-wrapper">
+    <div class="chart-wrapper1">
       <v-chart :options="opt" />
     </div>
   </div>
@@ -8,6 +8,28 @@
 
 <script>
 import { shengyuan } from "@/assets/js/data.js";
+
+if (!Object.entries) {
+  Object.entries = function(obj) {
+    const ownProps = Object.keys(obj);
+    let i = ownProps.length;
+    const resArray = new Array(i); // preallocate the Array
+    while ((i -= 1)) {
+      resArray[i] = [ownProps[i], obj[ownProps[i]]];
+    }
+    return resArray;
+  };
+}
+if (!Object.fromEntries) {
+  Object.fromEntries = function fromEntries(iterable) {
+    return [...iterable].reduce((obj, [key, val]) => {
+      // eslint-disable-next-line no-param-reassign
+      obj[key] = val;
+      return obj;
+    }, {});
+  };
+}
+
 export default {
   data() {
     return {
@@ -26,9 +48,13 @@ export default {
     draw() {
       this.opt = {
         grid: {
-          left: "3%",
-          right: "4%",
-          bottom: "3%",
+          // left: "3%",
+          // right: "4%",
+          // bottom: "3%",
+          x: "2%",
+          y: "2%",
+          x2: "2%",
+          y2: "2%",
           containLabel: true
         },
         xAxis: {
@@ -43,7 +69,7 @@ export default {
             lineStyle: {
               color: "#4d75e8",
               width: 4,
-              type:'solid'
+              type: "solid"
             }
           },
           axisTick: {
@@ -118,15 +144,15 @@ export default {
   position: relative;
   overflow-x: hidden;
   overflow-y: scroll;
-  .chart-wrapper {
+  .chart-wrapper1 {
     width: 577px;
     height: 1500px;
     margin: 0 auto;
     .echarts {
-      width: 100%;
-      height: 100%;
-      margin-top: -50px;
-      margin-left: -30px;
+      // width: 100%;
+      height: 1500px;
+      // margin-top: -50px;
+      // margin-left: -30px;
     }
   }
 }
