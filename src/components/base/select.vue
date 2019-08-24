@@ -78,14 +78,14 @@ export default {
 .school_select .top_name {
   width: 250px;
   height: 100%;
-  line-height: 50px;
+  line-height: 60px;
   overflow: hidden;
 }
 .school_select span {
   display: block;
   width: 50px;
   height: 100%;
-  line-height: 40px;
+  line-height: 55px;
   text-align: center;
   background-color: #1d88eb;
   border: 1px solid #1d88eb;

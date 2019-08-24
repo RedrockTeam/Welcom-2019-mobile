@@ -218,15 +218,19 @@ export default {
 }
 .home_countDown .num .num_sec{
     left: 155px;
+    top:3px;
 }
 .home_countDown .num .num_min{
     left: 135px;
+    top:3px;
 }
 .home_countDown .num .num_hour{
     left:136px;
+    top:3px;
 }
 .home_countDown .num .num_day{
     left: 116px;
+    top:3px;
 }
 /*@media screen and ( min-width: 410px ) and (max-width:490px){
     .home_countDown .text .shine{

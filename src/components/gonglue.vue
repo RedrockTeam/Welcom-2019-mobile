@@ -105,7 +105,7 @@ export default {
       background-size: contain;
 
       text-align: center;
-      line-height: 103px;
+      line-height: 105px;
       box-sizing: border-box;
       opacity: 0.8;
 

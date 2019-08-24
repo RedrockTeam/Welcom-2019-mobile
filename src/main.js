@@ -63,10 +63,9 @@ import VueTouch from 'vue-touch'
 
 import VideoPlayer from 'vue-video-player'
 import 'video.js/dist/video-js.css'
-import 'vue-video-player/src/custom-theme.css'
+import 'vue-video-player/src/custom-theme.css' 
+Vue.use(VideoPlayer) 
 
-
-Vue.use(VideoPlayer)
 Vue.use(VueTouch, {name: 'v-touch'})
 VueTouch.config.swipe = {
   threshold: 100 /* //手指左右滑动距离 */
@@ -75,12 +74,12 @@ VueTouch.config.swipe = {
 Vue.use(VuePreview, {
   mainClass: 'pswp--minimal--dark',
   barsSize: {top: 0, bottom: 0},
-  captionEl: false,
+  captionEl: true,
   fullscreenEl: false,
   shareEl: false,
   bgOpacity: 0.85,
   tapToClose: true,
-  tapToToggleControls: false
+  tapToToggleControls: true
 })
 Vue.prototype.$axios = Axios
 // Vue.component('detail-vue', details)

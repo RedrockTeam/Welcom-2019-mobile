@@ -39,10 +39,10 @@ export default {
 }
 .homeWelcome_con .homeWelcome_pic img{
     display: block;
-    width: 200px;
+    width:202px;
     margin: 0 auto;
     height: 100%;
-    border:3px solid #003fe0;
+    border:2px solid #003fe0;
 }
 .homeWelcome_con .homeWelcome_text{
     height: 90%;
@@ -71,8 +71,11 @@ export default {
 
 }
 .homeWelcome_con .homeWelcome_text .time{
-    width: 100%;
+    position:absolute;
+    top: 200px;
+    width: 400px;
     height: 40px;
+
 }
 .homeWelcome_con .homeWelcome_text .time span{
     display: block;
@@ -82,6 +85,6 @@ export default {
     font-size: 12px;
     font-family:'not specified';
     color: #7292ef;
-        margin-right: 30px;
+    margin-right: 30px;
 }
 </style>
