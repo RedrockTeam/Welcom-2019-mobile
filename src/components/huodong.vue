@@ -5,7 +5,7 @@
       <div class="main">
         <div class="huodong" id="help">
           <div class="img">
-            <img @click="pushToHelp()" src="../assets/images/huodong/help/help.png" />
+            <img @click="pushToHelp()" src="../assets/images/huodong/help/helphaibao.jpg" />
           </div>
           <div class="more" @click="pushToHelp()" ref="helpmore">了解更多</div>
         </div>

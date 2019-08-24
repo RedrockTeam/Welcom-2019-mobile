@@ -7,19 +7,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-  <title>走，到重邮追梦去</title>
+  <title>邮你造未来</title>
   <script>
     if (!(/( (iPhone) | (Android) )/.test(navigator.userAgent))) {
       window.location.href = "https://wx.idsbllp.cn/game/welcome2019/pc/"
     }
   </script>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145852410-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'UA-145852410-1');
+ <script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?c4b58ab4b706abaed483ae18a69c106a";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  })();
   </script>
 </head>
 
@@ -40,7 +41,7 @@
       title: "重邮迎新网",
       link: "https://wx.idsbllp.cn/game/welcome2019/mobile/",
       imgUrl: 'https://wx1.sinaimg.cn/orj360/006xK8oRly1g659r7v2wbj30j20fwgp8.jpg',
-      desc: '重邮萌新的百宝箱，新生入学的一站式体验，快来和我们一起在此躁起来',
+      desc: '嘀！萌新百宝箱已到，装备上，和我们一起躁起来',
       type: '',
       success: function () {
         console.log('分享成功');

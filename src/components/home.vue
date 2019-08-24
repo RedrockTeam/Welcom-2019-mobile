@@ -131,13 +131,13 @@ export default {
         welcomeOne:{
             'title' : '学长学姐帮帮忙',
             'detail' : '探索邮苑奇趣，与学长学姐零距离接触，号称重邮小百科的他们，为你解答疑惑。',
-             'time' : '活动时间:8.15--9.01',
+             'time' : '活动时间:8.20--9.20',
              'src':require('../assets/img/hongDongA.jpg')
         },
         welcomeTwo:{
             'title':"邮子画像",
-            'detail':'简单选择形成叙述自我，绘出完整邮子画像，由你碰撞发现更多精彩。',
-            'time':'活动时间:8.15--9.01',
+            'detail':'通过邮子专属的小测试，绘出独一无二的“自我画像”，大数据统计来pick相同选择的“邮苑新知”。',
+            'time':'敬请期待',
             'src':require('../assets/img/haibao.jpg')
         }
 
@@ -218,15 +218,22 @@ export default {
     line-height:93px;
 }
 .home_gong .home_gong_text{
-    line-height: 84px;
+    line-height: 83px;
 }
  .home_welcome .home_welcome_text{
      line-height: 88px;
  }
-.home_gong .home_gong_text , .home_jun_text ,
- .home_welcome .home_welcome_text , .home_we .home_we_text{
+.home_gong .home_gong_text , .home_jun_text 
+{
        top:10px;
  }
+ .home_welcome .home_welcome_text {
+     top:9px;
+ }
+ .home_we .home_we_text{
+     top: 12px;
+ }
+
 .home_map .home_map_img{
     width:662px;
     height: 340px;
@@ -277,6 +284,14 @@ export default {
     content: '';
 } 
 
+.newStu , .notice{
+    position: relative;
+    left: -12px;
+}
+.pratice , .life{
+    position: relative;
+    left: 10px;
+}
 .bus ,.video {
    position: relative;
    left: 20px;
@@ -383,6 +398,7 @@ export default {
     top: 100px;
     width: 100%;
     height: auto;
+    margin-top: 20px;
 }
 .home_ma_text .home_textA{
     position: relative;

@@ -34,8 +34,6 @@ export default {
                    {'name' : '数字图书馆' , 'src' : require('../../assets/img/you/10.png')},
                    {'name' :'仰望八教' ,    'src' : require('../../assets/img/you/11.png')},
                    {'name' : '老图'     ,   'src' : require('../../assets/img/you/12.jpg')},
-                   {'name' : '鸟瞰重邮' , 'src' : require('../../assets/img/you/13.png')},
-                   {'name' : '数字图书管' , 'src' : require('../../assets/img/you/14.png')},
                    {'name' :'仰望信科'  , 'src' : require('../../assets/img/you/15.jpg')},
                    {'name' : '重邮校徽' , 'src' : require('../../assets/img/you/16.jpg')}
                ]
