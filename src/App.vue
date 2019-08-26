@@ -123,7 +123,7 @@ export default {
 .flash_back{
     width: 100%;
     height: 410px;
-    background: url('./assets/img/newA.jpg');
+    background: url('./assets/img/noflasg.jpg');
     background-position: center 0;
     background-repeat: no-repeat;
     background-size:cover;
@@ -135,7 +135,7 @@ export default {
 .flash_light{
     width: 100%;
     height: 100%;
-    background: url('./assets/img/new.jpg');
+    background: url('./assets/img/flash.jpg');
     background-position: center 0;
     background-repeat: no-repeat;
     background-size:cover;
@@ -144,7 +144,7 @@ export default {
 .home_countDown{
     width: 100%;
     height: 250px;
-    background: url('./assets/img/new.jpg');
+    background: url('./assets/img/flash.jpg');
     background-position: center -420px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -356,8 +356,8 @@ export default {
     width: 100%;
     height: 330px;
     margin-top: 80px;
-    background: url('./assets/img/homeBackgroud.jpg');
-    background-position: center -4000px;;
+    background: url('./assets/img/footer.jpg');
+    background-position: center 0px;
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
