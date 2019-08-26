@@ -103,7 +103,7 @@ export default {
             src: require('../assets/img/map.jpg'),//预览时的大图
             msrc: require('../assets/img/map.jpg'),//默认的小图
             alt: 'picture1',
-            title: 'Image Caption 1',
+            title: '重邮地图',
             w: 1500,//双击时放大的尺寸
             h: 1000
           },
@@ -113,7 +113,7 @@ export default {
             src: require('../assets/img/erWeiMaA.png'),//预览时的大图
             msrc: require('../assets/img/erWeiMaA.png'),//默认的小图
             alt: 'picture1',
-            title: 'Image Caption 1',
+            title: '重邮小帮手',
             w: 300,//双击时放大的尺寸
             h: 300
           },
@@ -123,7 +123,7 @@ export default {
             src: require('../assets/img/erWeiMaB.png'),//预览时的大图
             msrc: require('../assets/img/erWeiMaB.png'),//默认的小图
             alt: 'picture1',
-            title: 'Image Caption 1',
+            title: '掌上重邮',
             w: 300,//双击时放大的尺寸
             h: 300
           },

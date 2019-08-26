@@ -120,7 +120,7 @@ export default {
 }
 .fengVideo_con .video_con .video_head , .video_test{
     width: 100%;
-    height: 322px;
+    height: 320px;
     border: 4px solid #8eaafd;
 }
 .video_test .test_border{

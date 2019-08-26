@@ -76,7 +76,7 @@ export default {
     width: 100%;
     height: 60px;
     background: url('../assets/img/song.jpg');
-    background-position: center -660px;
+    background-position: center -5px;
     background-repeat: no-repeat;
     background-size:cover;
 }

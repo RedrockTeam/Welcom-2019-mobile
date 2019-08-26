@@ -30,7 +30,7 @@ export default {
                    {'name' : '林荫大道' , 'src' : require('../../assets/img/you/6.png')},
                    {'name' : '落英缤纷' , 'src' :require('../../assets/img/you/7.png')},
                    {'name' : '鸟瞰重邮' , 'src' : require('../../assets/img/you/8.png')},
-                   {'name' :  '高山流水', 'src' : require('../../assets/img/you/9.png')},
+                   {'name' :  '高山流水', 'src' : require('../../assets/img/you/9.jpg')},
                    {'name' : '数字图书馆' , 'src' : require('../../assets/img/you/10.png')},
                    {'name' :'仰望八教' ,    'src' : require('../../assets/img/you/11.png')},
                    {'name' : '老图'     ,   'src' : require('../../assets/img/you/12.jpg')},
@@ -65,12 +65,13 @@ export default {
     height: 270px;
     margin: 0 auto;
     margin-top: 20px;
-    border: 3px solid #0236c8;
+    box-sizing: content-box;
+    border: 4px solid #0236c8;
 }
 .youCon_con .img_con img{
     display: block;
-    width: 100%;
-    height: 100%;
+    width: 265px;
+    height:269px;
 }
 .youCon_con .youCon_text{
     width: 260px;

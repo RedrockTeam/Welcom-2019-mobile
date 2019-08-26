@@ -129,6 +129,7 @@ export default {
 .video_test{
     width: 560px;
     margin: 0 auto;
+    margin-left: 35px;
 }
 .video_test .test_border{
     width: 100%;
