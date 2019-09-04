@@ -20,6 +20,7 @@
 - vue-video-player
 - video-js.css
 - custom-theme.css
+- vue-touch
 
 ## 使用
 
