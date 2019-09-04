@@ -14,7 +14,7 @@
 <script>
 import yunda from "../../../assets/images/gonglue/zhoubian/kuaidi/yunda.jpg"
 import jingshunyuan from "../../../assets/images/gonglue/zhoubian/kuaidi/jingshunyuan.jpg"
-import wudongzhongtong from "../../../assets/images/gonglue/zhoubian/kuaidi/wudongzhongtong.jpg"
+import zhongtong from "../../../assets/images/gonglue/zhoubian/kuaidi/zhongtong.jpg"
 import youzheng from "../../../assets/images/gonglue/zhoubian/kuaidi/youzheng.jpg"
 import xiaoneiyouzheng from "../../../assets/images/gonglue/zhoubian/kuaidi/xiaoneiyouzheng.jpg"
 import baishi from "../../../assets/images/gonglue/zhoubian/kuaidi/baishi.jpg"
@@ -36,9 +36,9 @@ export default {
           content: "位于二教与马克思主义学院下面居民区石碑处"
         },
         {
-          imgsrc: wudongzhongtong,
+          imgsrc: zhongtong,
           title: "中通快递",
-          content: "位于学生公寓知行苑5栋背后超市旁边"
+          content: "位于重邮南部校区62栋二单元1-4后"
         },
         {
           imgsrc: youzheng,

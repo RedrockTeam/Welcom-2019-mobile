@@ -53,7 +53,7 @@ export default {
                 'monA' : '',
                 'monLast' : '',
                 'secFist' : "",
-                'secLast' : ''
+                'secLast' : '',
             },
         }
     },
@@ -78,8 +78,17 @@ export default {
                 let second = Math.floor((subtract / 1000 ) % 60)
                 data.secFist = this.timeSplit(second , 0)
                 data.secLast = this.timeSplit(second , 1)
-                this.time = data
+            }else{
+                data.dayFist = '0'
+                data.dayLast = '0'
+                data.hourFist = '0'
+                data.hourLast = '0'
+                data.monA = '0'
+                data.monLast = '0'
+                data.secFist = '0'
+                data.secLast = '0'
             }
+            this.time = data
 
         },
         timeSplit:function(time , index){
