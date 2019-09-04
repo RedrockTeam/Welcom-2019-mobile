@@ -30,5 +30,5 @@ $ cd your-project-name
 
 $ npm install 
 
-$ npm run dev
+$ npm run serve
 ```
