@@ -1,29 +1,34 @@
-# welcome-mobile-2019
+## 项目介绍
 
-## Project setup
-```
-npm install
-```
+重庆邮电大学2019迎新网移动端
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
 
-### Compiles and minifies for production
-```
-npm run build
-```
 
-### Run your tests
-```
-npm run test
-```
+## 技术栈
 
-### Lints and fixes files
-```
-npm run lint
-```
+- vue
+- vue-router
+- webpack
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+## 用到的库和插件
+
+- axios
+- vue-echarts
+- vue-preview
+- vue-video-player
+- video-js.css
+- custom-theme.css
+
+## 使用
+
+```
+$ git clone https://github.com/RedrockTeam/Welcom-2019-mobile.git (your-project-name)
+
+$ cd your-project-name
+
+$ npm install 
+
+$ npm run dev
+```
