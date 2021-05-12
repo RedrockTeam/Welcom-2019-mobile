@@ -16,7 +16,7 @@
     "postcss-px-to-viewport": "^1.1.1",
     "postcss-viewport-units": "^0.1.6",
     "postcss-write-svg": "^3.0.1",
-    "swiper": "^4.5.0",
+    "swiper": "^6.5.1",
     "vue": "^2.6.10",
     "vue-concise-slider": "^3.4.2",
     "vue-echarts": "^4.0.3",
