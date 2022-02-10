@@ -29,7 +29,7 @@
     "@vue/cli-plugin-babel": "^3.10.0",
     "@vue/cli-service": "^3.10.0",
     "node-ipc": "^9.1.1",
-    "node-sass": "^4.9.0",
+    "node-sass": "^7.0.0",
     "postcss-px-to-viewport": "^1.1.1",
     "postcss-retina": "^1.2.0",
     "sass-loader": "^7.1.0",
